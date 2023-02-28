@@ -1,0 +1,47 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: bisque;
+}
+
+.header {
+    color: black;
+    text-align: center;
+    padding: 1rem;
+}
+
+.nav__button {
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    font-size: 2rem;
+    padding: 0.5rem;
+    width: 20%;
+}
+
+
+.colorBoxes {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 150px 150px 150px;
+    gap: 20px;
+    padding: 1rem 0;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+footer {
+    text-align: center;
+    font-size: 1rem;
+}

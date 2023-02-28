@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: gray;
+}
+
+.clock {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(clock.png);
+    background-size: cover;
+}
+
+.clock::before { /*중간에 동그랗게 만들어주는 것*/
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border-radius: 50%;
+    z-index: 10000;
+}
+ 
+
+.hours {
+
+    height: 10px;
+    width: 10px;
+    color: black;
+}
+
+.min {
+    height: 10px;
+    width: 10px;
+    color: red;
+}
