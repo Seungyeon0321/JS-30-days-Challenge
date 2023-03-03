@@ -27,6 +27,7 @@ const renderCalendar = () => {
         let isToday = i === date.getDate() && currMonth === new Date().getMonth() && currYear === new Date().getFullYear() ? "active": "";
         liTag += `<li class="${isToday}">${i}</li>`
     }
+    
 
     for (let i = lastDayOfMonth; i < 6; i++) { // creating li of next month first days
         liTag += `<li class="inactive">${i - lastDayOfMonth + 1}</li>`
