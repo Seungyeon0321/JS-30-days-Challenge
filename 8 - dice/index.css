@@ -20,13 +20,6 @@ body {
     padding: 1rem 0
 }
 
-.fa-solid{  
-    font-size: 3rem;
-    text-align: center;
-    color: white;
-    opacity: 1;
-}
-
 header {
     font-size: 2rem;
     color: white;
@@ -34,9 +27,14 @@ header {
     
 }
 
+img {
+    width: 10rem;
+    height: 10rem;
+}
+
 button{
-    font-size: 0.5rem;
-    padding: 3px 10px;
+    font-size: 1rem;
+    padding: 8px 20px;
     border-style: none;
     border-radius: 5px;
     background-color: #333333;

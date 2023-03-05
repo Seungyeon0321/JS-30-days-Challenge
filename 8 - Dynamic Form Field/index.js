@@ -11,8 +11,7 @@ btnAdd.addEventListener('click', () => {
 })
 
 btnRemove.addEventListener('click', () => {
-    const boxesContainer = document.querySelector(".boxes")
-    const input = boxesContainer.lastElementChild;
+    const input = boxes.lastElementChild;
     
     input.remove();
 })
