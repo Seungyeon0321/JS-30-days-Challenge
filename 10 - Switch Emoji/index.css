@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+
+body {
+    background-color: #19172E;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10%;
+    
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+.switch {
+    background-color: #303030;
+    border-style: none;
+    border-radius: 5px;
+    height: 10rem;
+    width: 10rem;
+    margin-top: 25%;
+    font-size: 4rem;
+    filter: grayscale();
+    transition: all 0.2s ease-in-out, filter 0.2s ease-in-out;
+}
+
+.switch:hover {
+    height: 12rem;
+    width: 12rem;
+    filter: none;
+}

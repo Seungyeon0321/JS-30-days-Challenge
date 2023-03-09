@@ -16,3 +16,6 @@ button.addEventListener('click', function() {
     let hi = diceClass.classList.add(`fa-dice-${dice[num]}`);
     return curClassname = hi; //이 로직이면 스택처럼 쌓여감
 })
+
+
+    
