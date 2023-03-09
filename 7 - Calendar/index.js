@@ -11,11 +11,14 @@ const months = ["January","February","March","April","May","June","July",
                 "August","September","October","November","December"]
 
 const renderCalendar = () => {
-    let firstDayOfMonth = new Date(currYear, currMonth, 1).getDay(); //getting first day of month
+    let firstDayOfMonth = new Date(currYear, currMonth, 1).getDay(); 
+    //getting first day of month
     console.log(firstDayOfMonth);
-    let lastDateOfMonth = new Date(currYear, currMonth + 1, 0).getDate(); //getting last date of month, 년도하고 달을 넣고 getDate를 하면 그 달의 마지막 날을 리턴 받을 수 있다.
+    let lastDateOfMonth = new Date(currYear, currMonth + 1, 0).getDate();
+     //getting last date of month, 년도하고 달을 넣고 getDate를 하면 그 달의 마지막 날을 리턴 받을 수 있다.
     let lastDateOfLastMonth = new Date(currYear, currMonth, 0).getDate();
-    let lastDayOfMonth = new Date(currYear, currMonth, lastDateOfMonth).getDay(); // getting last date of month
+    let lastDayOfMonth = new Date(currYear, currMonth, lastDateOfMonth).getDay(); 
+    // getting last date of month
     let liTag = ""; //이 부분도 중요
     
     for (let i = firstDayOfMonth; i > 0; i--) { // creating li of previous month last days
@@ -43,9 +46,11 @@ renderCalendar()
 prevNextIcon.forEach(icon => {
     icon.addEventListener("click", () => {
         //if clicked icon is previous icon then decrement current month by 1 else increment it by 1
-        currMonth = icon.id === "prev" ? currMonth - 1 : currMonth + 1; //이 부분이 중요하다
+        currMonth = icon.id === "prev" ? currMonth - 1 : currMonth + 1; 
+        //이 부분이 중요하다
 
-        if(currMonth <0 || currMonth > 11) { // if current month is less than - or grater than 1
+        if(currMonth <0 || currMonth > 11) { 
+            // if current month is less than - or grater than 1
             //creating a new date of current year & month and pass it as date value
             date = new Date(currYear, currMonth);
             currYear = date.getFullYear(); //updating current year with new date year
