@@ -1,7 +1,14 @@
+<<<<<<< HEAD
+*{
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+=======
 * {
     padding: 0;
     margin: 0;
     box-sizing: content-box;
+>>>>>>> bc694274faaa755cbf82e95c0c7a59c67949b802
 }
 
 body {
@@ -10,6 +17,43 @@ body {
 
 .main {
     display: flex;
+<<<<<<< HEAD
+    flex-direction: column;
+    margin: 5% auto;
+    text-align: center;
+    ;
+}
+
+h1 {
+    color: white;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+.boxForEmoji {
+    border-style: none;
+    border-radius: 5px;
+    width: 150px;
+    height: 150px;
+    margin-top: 15%;
+    background-color: #303030;
+    backdrop-filter: blur(25px);
+    transition: all 0.3s ease-in-out;
+    filter: grayscale();
+    font-size: 5rem;
+}
+
+.boxForEmoji:hover {
+    /* background-color: red; */
+    width: 200px;
+    height: 200px;
+    filter: none;
+}
+
+=======
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -39,3 +83,4 @@ h1 {
     width: 12rem;
     filter: none;
 }
+>>>>>>> bc694274faaa755cbf82e95c0c7a59c67949b802

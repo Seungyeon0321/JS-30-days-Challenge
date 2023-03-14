@@ -1,5 +1,26 @@
 'use strict'
 
+<<<<<<< HEAD
+const button = document.querySelector('.boxForEmoji')
+
+const emojis = [];
+
+const loadEmoji = async function () {
+
+    let res = await fetch('https://emoji-api.com/emojis?access_key=59ce5dc0ac29b1ba551ef5aaf81529fa54151f19');
+    let data = await res.json()
+
+    for(let i of data) emojis.push(i);
+}
+
+loadEmoji();
+
+button.addEventListener('mouseover', () => {
+    button.innerHTML = emojis[Math.floor(Math.random() * emojis.length)].character;
+    }
+);
+ 
+=======
 const btn = document.querySelector('.switch');
 
 const emojis = [];
@@ -26,3 +47,4 @@ btn.addEventListener('mouseover', () => {
 btn.addEventListener('click', () => {
     btn.innerText = emojis[Math.floor(Math.random() * emojis.length)];
 })
+>>>>>>> bc694274faaa755cbf82e95c0c7a59c67949b802
