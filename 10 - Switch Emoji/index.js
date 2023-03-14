@@ -6,8 +6,8 @@ const emojis = [];
 
 const emojiAddFunction = async () => {
 
-    let res = await fetch('https://emoji-api.com/emojis?access_key=dbd8d32ab12a8c9c7b223a5a21ae2edb533350a1')
-    res = await res.json();
+    let res = fetch('https://emoji-api.com/emojis?access_key=dbd8d32ab12a8c9c7b223a5a21ae2edb533350a1')
+    res = res.json();
 
 
     for(let i = 0; i < res.length; i++) {
