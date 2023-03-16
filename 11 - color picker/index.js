@@ -12,6 +12,7 @@ class ColorPicker {
         this.colorjoe.show(); 
         this.setSelectedColor("#009578");
 
+        //colorjoe Event Handling
         this.colorjoe.on("change", color => {
             this.setSelectedColor(color.hex(), true)
         })
