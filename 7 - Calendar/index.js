@@ -2,7 +2,7 @@ const currentDate = document.querySelector('.current-date');
 const daysTag = document.querySelector(".days");
 const prevNextIcon = document.querySelectorAll(".icons span");
 
-// getting new date, current year and month
+// getting new date, current year and monthw
 let date = new Date(),
 currYear = date.getFullYear(),
 currMonth = date.getMonth();
