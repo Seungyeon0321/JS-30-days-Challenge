@@ -14,7 +14,7 @@ class ColorPicker {
 
         //colorjoe Event Handling
         this.colorjoe.on("change", color => {
-            this.setSelectedColor(color.hex(), true)
+            this.setSelectedColor(color.hex(), true) //여기서 hex()는 colorjoe에서 received한 color을 hexcode로 변환해주는 역활을 한다.
         })
 
         this.root.querySelectorAll(".saved-color").forEach((el, i) => {
